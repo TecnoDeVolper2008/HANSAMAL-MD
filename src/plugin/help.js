@@ -90,20 +90,20 @@ let mode = ethix.public ? 'public' : 'private';
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
-│📍 ᴠᴇʀꜱɪᴏɴ: *1*
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
-│👤 ɴᴜᴍʙᴇʀ: +94729787750
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *ʜᴇʀᴏᴋᴜ*
-│🛡 ᴍᴏᴅᴇ: *ᴘᴜʙʟɪᴄ*
-│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀ*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *HANSAMAL-MD*
+│📍 ᴠᴇʀꜱɪᴏɴ: 3.0.2
+│👨‍💻 ᴏᴡɴᴇʀ : *IMALKA*      
+│👤 ɴᴜᴍʙᴇʀ: 94711262551
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
               text: "© Powered By HANSAMAL-MD"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('https://i.ibb.co/YpmG9QZ/Business-Social-Media-Banner-02.png')}, { upload: Matrix.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/HANSAMAL.jpg')}, { upload: Matrix.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: "",
