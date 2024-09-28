@@ -190,7 +190,7 @@ let mode = ethix.public ? 'public' : 'private';
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "Kawditha-NRML",
+                  newsletterName: "EGK NIRMAL",
                   serverMessageId: 143
                 }
               }
