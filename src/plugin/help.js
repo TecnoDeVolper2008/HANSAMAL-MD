@@ -77,7 +77,7 @@ const test = async (m, Matrix) => {
 
 let mode = ethix.public ? 'public' : 'private';
 
-        const validCommands = ['note', 'help', 'menu'];
+        const validCommands = ['note', 'kawditha', 'paper'];
 
   if (validCommands.includes(cmd)) {
     let msg = generateWAMessageFromContent(m.from, {
@@ -100,7 +100,7 @@ let mode = ethix.public ? 'public' : 'private';
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© Powered By HANSAMAL-MD"
+              text: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋᴀᴡᴅʜɪᴛʜᴀ ɴɪʀᴍᴀʟ"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/logo.png')}, { upload: Matrix.waUploadToServer})), 
