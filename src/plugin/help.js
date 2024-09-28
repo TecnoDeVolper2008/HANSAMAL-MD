@@ -103,7 +103,7 @@ let mode = ethix.public ? 'public' : 'private';
               text: "© Powered By HANSAMAL-MD"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/HANSAMAL.jpg')}, { upload: Matrix.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('https://i.ibb.co/YpmG9QZ/Business-Social-Media-Banner-02.png')}, { upload: Matrix.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: "",
