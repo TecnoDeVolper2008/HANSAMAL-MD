@@ -77,7 +77,7 @@ const test = async (m, Matrix) => {
 
 let mode = ethix.public ? 'public' : 'private';
 
-        const validCommands = ['list', 'help', 'menu'];
+        const validCommands = ['note', 'help', 'menu'];
 
   if (validCommands.includes(cmd)) {
     let msg = generateWAMessageFromContent(m.from, {
@@ -90,13 +90,13 @@ let mode = ethix.public ? 'public' : 'private';
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *HANSAMAL-MD*
-│📍 ᴠᴇʀꜱɪᴏɴ: 3.0.2
-│👨‍💻 ᴏᴡɴᴇʀ : *IMALKA*      
-│👤 ɴᴜᴍʙᴇʀ: 94711262551
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│📍 ᴠᴇʀꜱɪᴏɴ: *1*
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: +94729787750
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *ʜᴇʀᴏᴋᴜ*
+│🛡 ᴍᴏᴅᴇ: *ᴘᴜʙʟɪᴄ*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀ*
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
