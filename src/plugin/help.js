@@ -113,71 +113,71 @@ let mode = ethix.public ? 'public' : 'private';
               buttons: [
                 {
                   "name": "single_select",
-                  "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ",
+                  "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ🗒",
                  "sections":
                    [{
-                    "title":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ ᴍᴇɴᴜ",
-                    "highlight_label":"ᴀʟʟ ᴍᴇɴᴜ",
+                    "title":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ ʙᴏᴛ ᴍᴇɴᴜ",
+                    "highlight_label":"ꜱᴇʟᴇᴄᴛ ꜱᴜʙᴊᴇᴄᴛ",
                     "rows":[
                       {
                        "header":"",
-                       "title":"ᴀʟʟ ᴍᴇɴᴜ",
-                       "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                       "id":"View All Menu"
+                       "title":"ʜɪꜱᴛᴏʀʏ",
+                       "description":"ɴᴏᴛᴇꜱ✨",
+                       "id":"history"
                       },
                       {
                         "header":"",
-                        "title":"ᴅᴏᴡɴʟᴏᴀᴅ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Downloader Menu"
+                        "title":"ꜱɪɴʜᴀʟᴀ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"sinhala"
                       },
                       {
                         "header":"",
-                        "title":"ɢʀᴏᴜᴘ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Group Menu"
+                        "title":"ʙᴜᴅʜᴅʜɪꜱᴍ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"buddagama"
                       },
                       {
                         "header":"",
-                        "title":"ᴛᴏᴏʟ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Tool Menu"
+                        "title":"ᴇɴɢʟɪꜱʜ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"english"
                       },
                       {
                         "header":"",
-                        "title":"ᴍᴀɪɴ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Main Menu"
+                        "title":"ᴍᴀᴛʜ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"maths"
                       },
                      {
                         "header":"",
-                        "title":"ᴏᴡɴᴇʀ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Owner Menu"
+                        "title":"ꜱᴄɪᴇɴᴄᴇ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"scince"
                       },
                       {
                         "header":"",
-                        "title":"ᴀɪ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Ai Menu"
+                        "title":"ɢᴇᴏɢʀᴀᴘʜʏ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"bugole"
                       },
                       {
                         "header":"",
-                        "title":"ꜱᴇᴀʀᴄʜ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Search Menu"
+                        "title":"ᴍᴜꜱɪᴄ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"music"
                       },
                       {
                         "header":"",
-                        "title":"ꜱᴛᴀʟᴋ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Stalk Menu"
+                        "title":"ᴀɢʀᴇᴇ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"krushi"
                       },
                       {
                         "header":"",
-                        "title":"ᴄᴏɴᴠᴇʀᴛᴇʀ ᴍᴇɴᴜ",
-                        "description":"ʜᴀɴꜱᴀᴍᴀʟ-ᴍᴅ",
-                        "id":"Converter Menu"
+                        "title":"ᴀʀᴛ",
+                        "description":"ɴᴏᴛᴇꜱ✨",
+                        "id":"art"
                       }
                     ]}
                   ]}`
