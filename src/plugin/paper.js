@@ -100,10 +100,10 @@ let mode = ethix.public ? 'public' : 'private';
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© Powered By HANSAMAL-MD"
+              text: "ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴋᴀᴡᴅʜɪᴛʜᴀ ɴɪʀᴍᴀʟ"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
-                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/HANSAMAL.jpg')}, { upload: Matrix.waUploadToServer})), 
+                ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/paper.png')}, { upload: Matrix.waUploadToServer})), 
                   title: ``,
                   gifPlayback: true,
                   subtitle: "",
@@ -225,7 +225,7 @@ let mode = ethix.public ? 'public' : 'private';
             message: {
                 contactMessage: {
                     displayName: `Kawdhitha`,
-                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'HANSAMAL-MD'\nitem1.TEL;waid=${
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'Egk Nirmal'\nitem1.TEL;waid=${
                         m.sender.split("@")[0]
                     }:${
                         m.sender.split("@")[0]
