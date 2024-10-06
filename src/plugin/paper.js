@@ -121,8 +121,7 @@ let mode = ethix.public ? 'public' : 'private';
                       "rows":[
                         {
                          "header":"",
-                         "title":"ꜱᴄɪᴇɴᴄᴇ",
-                         "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                         "title":".science",
                          "id":"Downloader Menu"
                         },
                         {
