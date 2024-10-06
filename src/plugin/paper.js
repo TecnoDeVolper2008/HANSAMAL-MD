@@ -90,7 +90,7 @@ let mode = ethix.public ? 'public' : 'private';
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ 📝*
 │📍 ᴠᴇʀꜱɪᴏɴ: 1
 │👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
 │👤 ɴᴜᴍʙᴇʀ: 947297877501
@@ -121,9 +121,9 @@ let mode = ethix.public ? 'public' : 'private';
                     "rows":[
                       {
                        "header":"",
-                       "title":"ʜɪꜱᴛᴏʀʏ",
+                       "title":"ꜱᴄɪᴇɴᴄᴇ",
                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                       "id":"history"
+                       "id":"scince"
                       },
                       {
                         "header":"",
@@ -151,9 +151,9 @@ let mode = ethix.public ? 'public' : 'private';
                       },
                      {
                         "header":"",
-                        "title":"ꜱᴄɪᴇɴᴄᴇ",
+                        "title":"ʜɪꜱᴛᴏʀʏ",
                         "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"scince"
+                        "id":"history"
                       },
                       {
                         "header":"",
@@ -190,7 +190,7 @@ let mode = ethix.public ? 'public' : 'private';
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -203,19 +203,24 @@ let mode = ethix.public ? 'public' : 'private';
       messageId: msg.key.id
     });
   }
-      if (selectedId == "View All Menu") {
+      if (selectedId == "scince") {
         const mode = process.env.MODE;
-        const str = `hey ${m.pushName} ${pushwish}
-╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
-│📍 ᴠᴇʀꜱɪᴏɴ: 1
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
-│👤 ɴᴜᴍʙᴇʀ: 947297877501
-│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
-│🛡 ᴍᴏᴅᴇ: *${mode}*
-│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
-╰─────────────━┈⊷
-   `;
+        const sendPdf = async (conn, from, pdfUrl, caption, quoted) => {
+            await conn.sendMessage(from, {
+                document: { url: pdfUrl },
+                mimetype: 'application/pdf',
+                caption: caption
+            }, { quoted: quoted });
+        }
+        
+        // Usage example:
+        const from = '94729787750@s.whatsapp.net';  // Replace with actual chat ID
+        const pdfUrl = 'https://pastpapers.wiki/download/8046/2017-o-l/32512/2017-ol-science-marking-scheme-sinhala-medium.pdf';  // Replace with the actual PDF URL
+        const caption = '2017 Science Paper';
+        const quoted = null; // Optionally, pass a quoted message here
+        
+        sendPdf(conn, from, pdfUrl, caption, quoted);
+        ;
         let fgg = {
             key: {
                 fromMe: false,
@@ -234,7 +239,7 @@ let mode = ethix.public ? 'public' : 'private';
             }
         };
        let { key } = await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -242,7 +247,7 @@ let mode = ethix.public ? 'public' : 'private';
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -273,7 +278,7 @@ let mode = ethix.public ? 'public' : 'private';
 ┃✰ ${prefix}𝚃𝚒𝚔𝚝𝚘𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -281,7 +286,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -314,7 +319,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
     mentionedJid: [m.sender], 
@@ -339,7 +344,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -347,7 +352,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -378,7 +383,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -386,7 +391,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -414,7 +419,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -422,7 +427,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -442,7 +447,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -450,7 +455,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -473,7 +478,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝚃𝚝𝚜
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -481,7 +486,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -505,7 +510,7 @@ await Matrix.sendMessage(m.from, {
 ┃✰ ${prefix}𝙶𝚎𝚖𝚒𝚗𝚒
 ╰━━━━━━━━━━━━━━━⪼`
 await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -513,7 +518,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
@@ -538,7 +543,7 @@ await Matrix.sendMessage(m.from, {
 ╰━━━━━━━━━━━━━━━⪼
      `
      await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/HANSAMAL.jpg'), 
+  image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
   contextInfo: {
                   mentionedJid: [m.sender], 
@@ -546,7 +551,7 @@ await Matrix.sendMessage(m.from, {
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                   newsletterJid: '',
-                  newsletterName: "HANSAMAL-MD",
+                  newsletterName: "Kawdhitha-Nirmal",
                   serverMessageId: 143
                 }
               }
