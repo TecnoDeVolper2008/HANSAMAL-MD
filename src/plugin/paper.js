@@ -205,14 +205,7 @@ let mode = ethix.public ? 'public' : 'private';
   }
       if (selectedId == "science1") {
         const mode = process.env.MODE;
-        const pdfUrl = 'https://pastpapers.wiki/download/23693/20222023-o-l/72430/2020-ol-tamil-language-and-literature-past-paper-2.pdf';
-
-await conn.sendMessage(from, {
-    document: { url: pdfUrl },
-    mimetype: 'application/pdf',
-    fileName: 'sample.pdf',
-    caption: "Here is your PDF file!"
-}, { quoted: mek });
+        await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/c4fb65879b2c1690691f8.jpg`},caption:dec},{quoted:mek});
         const str = `hey ${m.pushName} ${pushwish}
 ╭─────────────━┈⊷
 │🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
