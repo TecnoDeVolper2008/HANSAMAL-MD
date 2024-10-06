@@ -121,8 +121,9 @@ let mode = ethix.public ? 'public' : 'private';
                       "rows":[
                         {
                          "header":"",
-                         "title":".science",
-                         "id":"Downloader Menu"
+                         "title":"ꜱᴄɪᴇɴᴄᴇ",
+                         "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                         "id":"science1"
                         },
                         {
                           "header":"",
@@ -204,10 +205,14 @@ let mode = ethix.public ? 'public' : 'private';
   }
       if (selectedId == "science1") {
         const mode = process.env.MODE;
-        await conn.sendMessage(from,{image:{url: `https://telegra.ph/file/c4fb65879b2c1690691f8.jpg`},caption:dec},{quoted:mek});
         const str = `hey ${m.pushName} ${pushwish}
-╭─────────────━┈⊷
+        *╭─────────────━┈⊷
+         > │😎 Type : .science
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
 │🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .science
 │📍 ᴠᴇʀꜱɪᴏɴ: 1
 │👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
 │👤 ɴᴜᴍʙᴇʀ: 947297877501
@@ -250,41 +255,23 @@ let mode = ethix.public ? 'public' : 'private';
   quoted: fgg
 });
 }
-   if ( selectedId == "Downloader Menu") {
-const pdfUrl = 'https://pastpapers.wiki/download/23693/20222023-o-l/72430/2020-ol-tamil-language-and-literature-past-paper-2.pdf';
+if ( selectedId == "krushi1") {
+    const str = `hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .krushi
+╰─────────────━┈⊷*
 
-// Send the PDF with a caption
-await conn.sendMessage(from, {
-    document: { url: pdfUrl },  // The PDF file URL
-    mimetype: 'application/pdf', // MIME type for PDF
-    fileName: 'O-Level Tamil Language and Literature Past Paper.pdf', // Optional: Name for the PDF
-    caption: dec // The caption you want to send with the PDF
-}, { quoted: mek });
-}
-   
-   if ( selectedId == "Group Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙶𝚁𝙾𝚄𝙿 ❯━╮
-┃✰ ${prefix}𝙻𝚒𝚗𝚔𝙶𝚛𝚘𝚞𝚙
-┃✰ ${prefix}𝚂𝚎𝚝𝚙𝚙𝚐𝚌
-┃✰ ${prefix}𝚂𝚎𝚝𝚗𝚊𝚖𝚎
-┃✰ ${prefix}𝚂𝚎𝚝𝚍𝚎𝚜𝚌
-┃✰ ${prefix}𝙶𝚛𝚘𝚞𝚙
-┃✰ ${prefix}𝚆𝚎𝚕𝚌𝚘𝚖𝚎
-┃✰ ${prefix}𝙰𝚍𝚍
-┃✰ ${prefix}𝙺𝚒𝚌𝚔
-┃✰ ${prefix}𝙷𝚒𝚍𝚎𝚃𝚊𝚐
-┃✰ ${prefix}𝚃𝚊𝚐𝚊𝚕𝚕
-┃✰ ${prefix}𝙰𝚗𝚝𝚒𝙻𝚒𝚗𝚔
-┃✰ ${prefix}𝙰𝚗𝚝𝚒𝚃𝚘𝚡𝚒𝚌
-┃✰ ${prefix}𝙿𝚛𝚘𝚖𝚘𝚝𝚎
-┃✰ ${prefix}𝙳𝚎𝚖𝚘𝚝𝚎
-┃✰ ${prefix}𝙶𝚎𝚝𝚋𝚒𝚘
-╰━━━━━━━━━━━━━━━⪼
-     `
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .krushi
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
      await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
@@ -298,18 +285,23 @@ await conn.sendMessage(from, {
 });
 }
    
-   if (selectedId == "Main Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙼𝙰𝙸𝙽 ❯━╮
-┃✰ ${prefix}𝙿𝚒𝚗𝚐
-┃✰ ${prefix}𝙰𝚕𝚒𝚟𝚎
-┃✰ ${prefix}𝙾𝚠𝚗𝚎𝚛
-┃✰ ${prefix}𝙼𝚎𝚗𝚞
-┃✰ ${prefix}𝙸𝚗𝚏𝚘𝚋𝚘𝚝
-╰━━━━━━━━━━━━━━━⪼`
+   if (selectedId == "sinhala1") {
+     const str =`hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .sinhala
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .sinhala
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
@@ -328,27 +320,23 @@ await Matrix.sendMessage(m.from, {
 });
 }
    
-   if (selectedId == "Owner Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙾𝚆𝙽𝙴𝚁 ❯━╮
-┃✰ ${prefix}𝙹𝚘𝚒𝚗
-┃✰ ${prefix}𝙻𝚎𝚊𝚟𝚎
-┃✰ ${prefix}𝙱𝚕𝚘𝚌𝚔
-┃✰ ${prefix}𝚄𝚗𝚋𝚕𝚘𝚌𝚔
-┃✰ ${prefix}𝙱𝚌𝚐𝚛𝚘𝚞𝚙
-┃✰ ${prefix}𝙱𝚌𝚊𝚕𝚕
-┃✰ ${prefix}𝚂𝚎𝚝𝚙𝚙𝚋𝚘𝚝
-┃✰ ${prefix}𝙰𝚗𝚝𝚒𝚌𝚊𝚕𝚕
-┃✰ ${prefix}𝚂𝚎𝚝𝚜𝚝𝚊𝚝𝚞𝚜
-┃✰ ${prefix}𝚂𝚎𝚝𝚗𝚊𝚖𝚎𝚋𝚘𝚝
-┃✰ ${prefix}𝙰𝚞𝚝𝚘𝚃𝚢𝚙𝚒𝚗𝚐
-┃✰ ${prefix}𝙰𝚕𝚠𝚊𝚢𝚜𝙾𝚗𝚕𝚒𝚗𝚎
-┃✰ ${prefix}𝙰𝚞𝚝𝚘𝚁𝚎𝚊𝚍
-┃✰ ${prefix}𝚊𝚞𝚝𝚘𝚜𝚟𝚒𝚎𝚠
-╰━━━━━━━━━━━━━━━⪼`
+   if (selectedId == "buddagama1") {
+     const str = `hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .buddagama
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .buddagama
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
@@ -367,24 +355,23 @@ await Matrix.sendMessage(m.from, {
 });
 }
    
-   if (selectedId == "Search Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝚂𝙴𝙰𝚁𝙲𝙷 ❯━╮
-┃✰ ${prefix}𝙿𝚕𝚊𝚢
-┃✰ ${prefix}𝚈𝚝𝚜
-┃✰ ${prefix}𝙸𝚖𝚍𝚋
-┃✰ ${prefix}𝙶𝚘𝚘𝚐𝚕𝚎
-┃✰ ${prefix}𝙶𝚒𝚖𝚊𝚐𝚎
-┃✰ ${prefix}𝙿𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝
-┃✰ ${prefix}𝚆𝚊𝚕𝚕𝚙𝚊𝚙𝚎𝚛
-┃✰ ${prefix}𝚆𝚒𝚔𝚒𝚖𝚎𝚍𝚒𝚊
-┃✰ ${prefix}𝚈𝚝𝚜𝚎𝚊𝚛𝚌𝚑
-┃✰ ${prefix}𝚁𝚒𝚗𝚐𝚝𝚘𝚗𝚎
-┃✰ ${prefix}𝙻𝚢𝚛𝚒𝚌𝚜
-╰━━━━━━━━━━━━━━━⪼`
+   if (selectedId == "english1") {
+     const str =`hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .english
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .english
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
@@ -402,48 +389,23 @@ await Matrix.sendMessage(m.from, {
   quoted: m
 });
 }
-   if (selectedId == "Stalk Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝚂𝚃𝙰𝙻𝙺 ❯━╮
-┃✰ ${prefix}𝙽𝚘𝚠𝚊
-┃✰ ${prefix}𝚃𝚛𝚞𝚎𝚌𝚊𝚕𝚕𝚎𝚛
-┃✰ ${prefix}𝙸𝚗𝚜𝚝𝚊𝚂𝚝𝚊𝚕𝚔
-┃✰ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
-╰━━━━━━━━━━━━━━━⪼`
-await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/paper.png'), 
-  caption: str, 
-  contextInfo: {
-                  mentionedJid: [m.sender], 
-                  forwardingScore: 999,
-                  isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                  newsletterJid: '',
-                  newsletterName: "Kawdhitha-Nirmal",
-                  serverMessageId: 143
-                }
-              }
-}, {
-  quoted: m
-});
-}
-   
-   if (selectedId == "Tool Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝚃𝙾𝙾𝙻 ❯━╮
-┃✰ ${prefix}𝙲𝚊𝚕𝚌𝚞𝚕𝚊𝚝𝚘𝚛
-┃✰ ${prefix}𝚃𝚎𝚖𝚙𝚖𝚊𝚒𝚕
-┃✰ ${prefix}𝙲𝚑𝚎𝚌𝚔𝚖𝚊𝚒𝚕
-┃✰ ${prefix}𝙸𝚗𝚏𝚘
-┃✰ ${prefix}𝚃𝚛𝚝
-┃✰ ${prefix}𝚃𝚝𝚜
-╰━━━━━━━━━━━━━━━⪼`
+   if (selectedId == "maths1") {
+     const str =`hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .maths
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .maths
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
@@ -462,20 +424,23 @@ await Matrix.sendMessage(m.from, {
 });
 }
    
-   if (selectedId == "Ai Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙰𝙸 ❯━╮
-┃✰ ${prefix}𝙰𝚒
-┃✰ ${prefix}𝙱𝚞𝚐
-┃✰ ${prefix}𝚁𝚎𝚙𝚘𝚛𝚝
-┃✰ ${prefix}𝙶𝚙𝚝
-┃✰ ${prefix}𝙳𝚊𝚕𝚕𝚎
-┃✰ ${prefix}𝚁𝚎𝚖𝚒𝚗𝚒
-┃✰ ${prefix}𝙶𝚎𝚖𝚒𝚗𝚒
-╰━━━━━━━━━━━━━━━⪼`
+   if (selectedId == "history1") {
+     const str =`hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .history
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .history
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
 await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
@@ -494,21 +459,58 @@ await Matrix.sendMessage(m.from, {
 });
 }
    
-   if (selectedId == "Converter Menu") {
-     const str =`╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙲𝙾𝙽𝚅𝙴𝚁𝚃𝙴𝚁 ❯━╮
-┃✰ ${prefix}𝙰𝚃𝚃𝙿
-┃✰ ${prefix}𝙰𝚃𝚃𝙿2
-┃✰ ${prefix}𝙰𝚃𝚃𝙿3
-┃✰ ${prefix}𝙴𝙱𝙸𝙽𝙰𝚁𝚈
-┃✰ ${prefix}𝙳𝙱𝙸𝙽𝙰𝚁𝚈
-┃✰ ${prefix}𝙴𝙼𝙾𝙹𝙸𝙼𝙸𝚇
-┃✰ ${prefix}𝙼𝙿3
-╰━━━━━━━━━━━━━━━⪼
-     `
+   if (selectedId == "bugole1") {
+     const str =`hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .bugole
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .bugole
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
+await Matrix.sendMessage(m.from, {
+  image: fs.readFileSync('./src/paper.png'), 
+  caption: str, 
+  contextInfo: {
+                  mentionedJid: [m.sender], 
+                  forwardingScore: 999,
+                  isForwarded: true,
+                forwardedNewsletterMessageInfo: {
+                  newsletterJid: '',
+                  newsletterName: "Kawdhitha-Nirmal",
+                  serverMessageId: 143
+                }
+              }
+}, {
+  quoted: m
+});
+}
+   
+   if (selectedId == "music1") {
+     const str =`hey ${m.pushName} ${pushwish}
+        *╭─────────────━┈⊷
+         > │😎 Type : .smusic
+╰─────────────━┈⊷*
+
+        ╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│😎 Type : .music
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `
      await Matrix.sendMessage(m.from, {
   image: fs.readFileSync('./src/paper.png'), 
   caption: str, 
