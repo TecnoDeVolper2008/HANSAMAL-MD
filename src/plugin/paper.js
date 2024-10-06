@@ -205,7 +205,7 @@ let mode = ethix.public ? 'public' : 'private';
   }
       if (selectedId == "science1") {
         const mode = process.env.MODE;
-        const pdfUrl = `https://pastpapers.wiki/download/8046/2017-o-l/32512/2017-ol-science-marking-scheme-sinhala-medium.pdf`
+        const pdfUrl = "https://pastpapers.wiki/download/8046/2017-o-l/32512/2017-ol-science-marking-scheme-sinhala-medium.pdf"
         const str = `hey ${m.pushName} ${pushwish}
 ╭─────────────━┈⊷
 │🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
