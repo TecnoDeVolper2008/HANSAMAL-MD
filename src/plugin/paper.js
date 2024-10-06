@@ -112,76 +112,76 @@ let mode = ethix.public ? 'public' : 'private';
             nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
               buttons: [
                 {
-                  "name": "single_select",
-                  "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ🗒",
-                 "sections":
-                   [{
-                    "title":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ ʙᴏᴛ ᴍᴇɴᴜ - ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ",
-                    "highlight_label":"ꜱᴇʟᴇᴄᴛ ꜱᴜʙᴊᴇᴄᴛ",
-                    "rows":[
-                      {
-                       "header":"",
-                       "title":"ꜱᴄɪᴇɴᴄᴇ",
-                       "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                       "id":"scince"
-                      },
-                      {
-                        "header":"",
-                        "title":"ꜱɪɴʜᴀʟᴀ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"sinhala"
-                      },
-                      {
-                        "header":"",
-                        "title":"ʙᴜᴅʜᴅʜɪꜱᴍ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"buddagama"
-                      },
-                      {
-                        "header":"",
-                        "title":"ᴇɴɢʟɪꜱʜ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"english"
-                      },
-                      {
-                        "header":"",
-                        "title":"ᴍᴀᴛʜ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"maths"
-                      },
-                     {
-                        "header":"",
-                        "title":"ʜɪꜱᴛᴏʀʏ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"history"
-                      },
-                      {
-                        "header":"",
-                        "title":"ɢᴇᴏɢʀᴀᴘʜʏ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"bugole"
-                      },
-                      {
-                        "header":"",
-                        "title":"ᴍᴜꜱɪᴄ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"music"
-                      },
-                      {
-                        "header":"",
-                        "title":"ᴀɢʀᴇᴇ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"krushi"
-                      },
-                      {
-                        "header":"",
-                        "title":"ᴀʀᴛ",
-                        "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                        "id":"art"
-                      }
-                    ]}
-                  ]}`
-                },
+                    "name": "single_select",
+                    "buttonParamsJson": `{"title":"ᴛᴀᴘ ʜᴇʀᴇ🗒",
+                   "sections":
+                     [{
+                      "title":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ ʙᴏᴛ ᴍᴇɴᴜ - ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ",
+                      "highlight_label":"ꜱᴇʟᴇᴄᴛ ꜱᴜʙᴊᴇᴄᴛ",
+                      "rows":[
+                        {
+                         "header":"",
+                         "title":"ꜱᴄɪᴇɴᴄᴇ",
+                         "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                         "id":"science1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ꜱɪɴʜᴀʟᴀ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"sinhala1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ʙᴜᴅʜᴅʜɪꜱᴍ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"buddagama1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ᴇɴɢʟɪꜱʜ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"english1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ᴍᴀᴛʜ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"maths1"
+                        },
+                       {
+                          "header":"",
+                          "title":"ʜɪꜱᴛᴏʀʏ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"history1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ɢᴇᴏɢʀᴀᴘʜʏ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"bugole1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ᴍᴜꜱɪᴄ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"music1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ᴀɢʀᴇᴇ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"krushi1"
+                        },
+                        {
+                          "header":"",
+                          "title":"ᴀʀᴛ",
+                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
+                          "id":"art1"
+                        }
+                      ]}
+                    ]}`
+                  },
               ],
             }),
             contextInfo: {
@@ -203,24 +203,20 @@ let mode = ethix.public ? 'public' : 'private';
       messageId: msg.key.id
     });
   }
-      if (selectedId == "scince") {
+      if (selectedId == "science1") {
         const mode = process.env.MODE;
-        const sendPdf = async (conn, from, pdfUrl, caption, quoted) => {
-            await conn.sendMessage(from, {
-                document: { url: pdfUrl },
-                mimetype: 'application/pdf',
-                caption: caption
-            }, { quoted: quoted });
-        }
-        
-        // Usage example:
-        const from = '94729787750@s.whatsapp.net';  // Replace with actual chat ID
-        const pdfUrl = 'https://pastpapers.wiki/download/8046/2017-o-l/32512/2017-ol-science-marking-scheme-sinhala-medium.pdf';  // Replace with the actual PDF URL
-        const caption = '2017 Science Paper';
-        const quoted = null; // Optionally, pass a quoted message here
-        
-        sendPdf(conn, from, pdfUrl, caption, quoted);
-        ;
+        const pdfUrl = `https://pastpapers.wiki/download/8046/2017-o-l/32512/2017-ol-science-marking-scheme-sinhala-medium.pdf`
+        const str = `hey ${m.pushName} ${pushwish}
+╭─────────────━┈⊷
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *📝ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ ᴀɴᴅ ɴᴏᴛᴇ📝*
+│📍 ᴠᴇʀꜱɪᴏɴ: 1
+│👨‍💻 ᴏᴡɴᴇʀ : *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*      
+│👤 ɴᴜᴍʙᴇʀ: 947297877501
+│📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
+│🛡 ᴍᴏᴅᴇ: *${mode}*
+│💫 ᴄʀᴇᴀᴛᴇʀ: *ᴋᴀᴡᴅɪᴛʜᴀ ɴɪʀᴍᴀʟ*
+╰─────────────━┈⊷
+   `;
         let fgg = {
             key: {
                 fromMe: false,
