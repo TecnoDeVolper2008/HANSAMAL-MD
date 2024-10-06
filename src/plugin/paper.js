@@ -123,7 +123,7 @@ let mode = ethix.public ? 'public' : 'private';
                          "header":"",
                          "title":"ꜱᴄɪᴇɴᴄᴇ",
                          "description":"ᴘᴀꜱᴛ ᴘᴀᴘᴇʀ✨",
-                         "id":"science1"
+                         "id":"Downloader Menu"
                         },
                         {
                           "header":"",
@@ -252,43 +252,15 @@ let mode = ethix.public ? 'public' : 'private';
 });
 }
    if ( selectedId == "Downloader Menu") {
-     const str = `╭───❮ *s ᴇ ʀ ᴠ ᴇ ʀ* ❯
-│➥ 𝚃𝙾𝚃𝙰𝙻 𝚁𝙰𝙼: ${formatBytes(totalMemoryBytes)}
-│➥ 𝙵𝚁𝙴𝙴 𝚁𝙰𝙼: ${formatBytes(freeMemoryBytes)}
-╰━━━━━━━━━━━━━━━➥
-╭━❮ 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳 ❯━╮
-┃✰ ${prefix}𝙰𝚙𝚔
-┃✰ ${prefix}𝙵𝚊𝚌𝚎𝚋𝚘𝚘𝚔
-┃✰ ${prefix}𝙼𝚎𝚍𝚒𝚊𝚏𝚒𝚛𝚎
-┃✰ ${prefix}𝙿𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝𝚍𝚕
-┃✰ ${prefix}𝙶𝚒𝚝𝚌𝚕𝚘𝚗𝚎
-┃✰ ${prefix}𝙶𝚍𝚛𝚒𝚟𝚎
-┃✰ ${prefix}𝙸𝚗𝚜𝚝𝚊
-┃✰ ${prefix}𝚈𝚝𝚖𝚙3
-┃✰ ${prefix}𝚈𝚝𝚖𝚙4
-┃✰ ${prefix}𝙿𝚕𝚊𝚢
-┃✰ ${prefix}𝚂𝚘𝚗𝚐
-┃✰ ${prefix}𝚅𝚒𝚍𝚎𝚘
-┃✰ ${prefix}𝚈𝚝𝚖𝚙3𝚍𝚘𝚌
-┃✰ ${prefix}𝚈𝚝𝚖𝚙4𝚍𝚘𝚌
-┃✰ ${prefix}𝚃𝚒𝚔𝚝𝚘𝚔
-╰━━━━━━━━━━━━━━━⪼`
-await Matrix.sendMessage(m.from, {
-  image: fs.readFileSync('./src/paper.png'), 
-  caption: str, 
-  contextInfo: {
-                  mentionedJid: [m.sender], 
-                  forwardingScore: 999,
-                  isForwarded: true,
-                forwardedNewsletterMessageInfo: {
-                  newsletterJid: '',
-                  newsletterName: "Kawdhitha-Nirmal",
-                  serverMessageId: 143
-                }
-              }
-}, {
-  quoted: m
-});
+const pdfUrl = 'https://pastpapers.wiki/download/23693/20222023-o-l/72430/2020-ol-tamil-language-and-literature-past-paper-2.pdf';
+
+// Send the PDF with a caption
+await conn.sendMessage(from, {
+    document: { url: pdfUrl },  // The PDF file URL
+    mimetype: 'application/pdf', // MIME type for PDF
+    fileName: 'O-Level Tamil Language and Literature Past Paper.pdf', // Optional: Name for the PDF
+    caption: dec // The caption you want to send with the PDF
+}, { quoted: mek });
 }
    
    if ( selectedId == "Group Menu") {
