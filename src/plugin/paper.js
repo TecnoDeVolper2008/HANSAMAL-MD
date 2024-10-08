@@ -497,7 +497,7 @@ await Matrix.sendMessage(m.from, {
    if (selectedId == "music1") {
      const str =`hey ${m.pushName} ${pushwish}
         *╭─────────────━┈⊷
-         > │😎 Type : .smusic
+         > │😎 Type : .music
 ╰─────────────━┈⊷*
 
         ╭─────────────━┈⊷
